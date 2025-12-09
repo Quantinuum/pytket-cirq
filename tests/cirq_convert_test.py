@@ -153,7 +153,7 @@ def test_unsupported_qubit_type() -> None:
 
 
 def test_reset() -> None:
-    # https://github.com/CQCL/pytket-cirq/issues/96
+    # https://github.com/Quantinuum/pytket-cirq/issues/96
     q0 = LineQubit(0)
     circ = cirq.Circuit([cirq.ops.ResetChannel().on(q0)])
     c_tk = cirq_to_tk(circ)

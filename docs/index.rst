@@ -21,5 +21,5 @@ Windows. To install, run:
 .. toctree::
    :caption: Useful links
 
-   Issue tracker <https://github.com/CQCL/pytket-cirq/issues>
+   Issue tracker <https://github.com/Quantinuum/pytket-cirq/issues>
    PyPi <https://pypi.org/project/pytket-cirq/>
