@@ -7,7 +7,7 @@
 with tket, a quantum computing toolkit and optimising compiler developed by Quantinuum.
 
 `pytket-cirq` is an extension to `pytket` that allows `pytket` circuits to be
-executed on .
+executed on Cirq simulators and supported quantum devices.
 
 Some useful links:
 

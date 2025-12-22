@@ -25,7 +25,7 @@ classifiers = [
     "Topic :: Scientific/Engineering",
 ]
 dependencies = [
-    "pytket >= 2.7.0",
+    "pytket >= 2.11.0",
     "cirq-core >= 1.6.0",
     "cirq-google >= 1.6.0",
 ]
@@ -39,7 +39,7 @@ tracker = "https://github.com/Quantinuum/pytket-cirq/issues"
 find = {}
 
 [tool.setuptools.dynamic]
-version = {attr = "_metadata.__extension_version__"}
+version = {attr = "pytket.extensions.cirq._metadata.__extension_version__"}
 
 [build-system]
 requires = ["setuptools"]
