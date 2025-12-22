@@ -64,7 +64,7 @@ _cirq2ops_mapping = {
     cirq.ops.common_channels.ResetChannel: OpType.Reset,
 }
 # reverse mapping for convenience
-_ops2cirq_mapping: dict = dict((item[1], item[0]) for item in _cirq2ops_mapping.items())  # noqa: C402
+_ops2cirq_mapping: dict = {item[1]: item[0] for item in _cirq2ops_mapping.items()}
 # spot special rotation gates
 _constant_gates = (
     cirq_common.CNOT,
