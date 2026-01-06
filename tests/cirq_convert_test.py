@@ -1,4 +1,4 @@
-# Copyright Quantinuum  # noqa: EXE002
+# Copyright Quantinuum
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -129,7 +129,7 @@ def test_device() -> None:
 @pytest.mark.parametrize("cirq_qubit_type", ["LineQubit", "GridQubit", "NamedQubit"])
 def test_parallel_ops(cirq_qubit_type: str) -> None:
     if cirq_qubit_type == "LineQubit":
-        q0, q1, q2 = [LineQubit(i) for i in range(3)]
+        q0, q1, q2 = (LineQubit(i) for i in range(3))
     if cirq_qubit_type == "GridQubit":
         q0, q1, q2 = GridQubit.rect(rows=1, cols=3)  # type: ignore
     if cirq_qubit_type == "NamedQubit":
@@ -153,7 +153,7 @@ def test_unsupported_qubit_type() -> None:
 
 
 def test_reset() -> None:
-    # https://github.com/CQCL/pytket-cirq/issues/96
+    # https://github.com/Quantinuum/pytket-cirq/issues/96
     q0 = LineQubit(0)
     circ = cirq.Circuit([cirq.ops.ResetChannel().on(q0)])
     c_tk = cirq_to_tk(circ)
